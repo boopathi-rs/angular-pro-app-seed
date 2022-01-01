@@ -74,6 +74,8 @@ npm run build:production
 
 #### Deploying to Firebase
 
+> BR: run `sudo n` to set node js version to latest(16.13.0 in my case) before running firebase commands. Set it back to 8.12.0 to run yarn install, yarn build:production etc., commands.
+
 You'll need to ensure you're logged into Firebase first (if you are prompted, otherwise skip to next step):
 
 ```
