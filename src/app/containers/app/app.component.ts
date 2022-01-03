@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   template: `
     <div>
       Hello Ultimate Angular!
-      <div class="wrappter">
+      <div class="wrapper">
         <router-outlet></router-outlet>
       </div>
     </div>

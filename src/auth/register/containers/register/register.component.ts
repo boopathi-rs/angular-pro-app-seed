@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { FormGroup } from '@angular/forms';
+import { Router } from '@angular/router';
+
 import { AuthService } from '../../../shared/services/auth/auth.service';
 
 @Component ({
@@ -26,10 +28,10 @@ export class RegisterComponent {
 
     async registerUser(event: FormGroup) {
         // const { email, password } : event.value;
-        try {
+        try {            
             // this.authService.createUser(email, password);
-            this.authService.createUser(event.value.email, event.value.password);
-        } catch(err) {
+            await this.authService.createUser(event.value.email, event.value.password);
+        } catch(err) {            
             this.error = err.message;
         }
     }

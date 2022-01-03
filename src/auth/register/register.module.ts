@@ -9,7 +9,7 @@ import { SharedModule } from '../shared/shared.module';
 
 export const ROUTES: Routes = [
     { path: '', component: RegisterComponent }
-]
+];
 @NgModule({
     imports: [
         CommonModule,
