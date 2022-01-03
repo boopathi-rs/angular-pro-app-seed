@@ -5,6 +5,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { Store } from 'store';
 
 // feature modules
+import {AuthModule} from './../auth/auth-module';
 
 // containers
 import { AppComponent } from './containers/app/app.component';
@@ -17,7 +18,8 @@ export const ROUTES: Routes = [];
 @NgModule({
   imports: [
     BrowserModule,
-    RouterModule.forRoot(ROUTES)
+    RouterModule.forRoot(ROUTES),
+    AuthModule
   ],
   declarations: [
     AppComponent
@@ -40,13 +42,13 @@ export class AppModule {}
 
   // Your web app's Firebase configuration
   const firebaseConfig = {
-    apiKey: "AIzaSyBUtUbRd-96lr9L3F5RzfrOcHVIhLAIgD8",
-    authDomain: "fitness-app-9fc76.firebaseapp.com",
-    databaseURL: "https://fitness-app-9fc76-default-rtdb.firebaseio.com",
-    projectId: "fitness-app-9fc76",
-    storageBucket: "fitness-app-9fc76.appspot.com",
-    messagingSenderId: "726377423821",
-    appId: "1:726377423821:web:d32365cd90108ee58f1a84"
+    apiKey: "AIzaSyCaBs3CmRguAWEGGWhk9PUfCD9frruteZ8",
+    authDomain: "fitness-app-93c32.firebaseapp.com",
+    databaseURL: "https://fitness-app-93c32-default-rtdb.firebaseio.com",
+    projectId: "fitness-app-93c32",
+    storageBucket: "fitness-app-93c32.appspot.com",
+    messagingSenderId: "379679711229",
+    appId: "1:379679711229:web:97fa6c1691c36aa1a24394"
   };
 
   // Initialize Firebase
